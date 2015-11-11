@@ -1,0 +1,76 @@
+html {
+  background-color: purple;
+}
+
+body {
+  max-width: 1000px;
+  margin: 0px auto;
+  background: white;
+  font-family: Verdana, sans-serif;
+  font-size: 1em;
+  padding: 50px;
+}
+
+.logo {
+  max-width: 400px;
+  margin: 0px auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+@keyframes flash {
+  from, 50%, to {
+    opacity: 1;
+  }
+
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+.logo {
+  animation: flash 4s infinite;
+}
+
+table {
+   border-collapse: collapse;
+   margin: 0 auto;
+}
+
+table:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+caption, thead {
+  font-weight: bold;
+}
+
+caption {
+  font-size: 1.5em;
+  padding: 10px;
+}
+
+tbody tr {
+  transition: all .5s
+}
+
+tbody tr:hover {
+  transform: translateX(5px);
+}
+
+td {
+  border: 2px solid gray;
+  padding: 10px;
+}
+
+tbody td {
+  transition: all 1s;
+}
+
+tbody td:hover {
+  background-color: #ccc;
+}
