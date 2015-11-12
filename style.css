@@ -30,8 +30,8 @@ img {
   }
 }
 
-.logo {
-  animation: flash 4s infinite;
+.logo:hover {
+  animation: flash 3s;
 }
 
 table {
@@ -43,6 +43,7 @@ table:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
+  transition: 1s;
 }
 
 caption, thead {
